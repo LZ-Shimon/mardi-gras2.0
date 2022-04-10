@@ -1,0 +1,41 @@
+$purple: #9453a6;
+$green: #8cbf3f;
+$yellow: #f2cc0f;
+$white: #f2f2f2;
+$black: #0d0d0d;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pattaya", "Henny Penny b";
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 50px 8%;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+.videos {
+  margin: 2%;
+  padding: 2%;
+}
+.footer-h5 {
+  display: flex;
+  align-items: baseline;
+  justify-items: baseline;
+  text-align: center;
+  background-color: $white;
+}

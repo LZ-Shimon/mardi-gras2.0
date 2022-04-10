@@ -1,0 +1,206 @@
+$purple: #9453a6;
+$green: #8cbf3f;
+$yellow: #f2cc0f;
+$white: #f2f2f2;
+$black: #0d0d0d;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient($purple, $yellow);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+h3 {
+  font-family: "Pattaya", "Henny Penny" "b";
+  font-size: 25px;
+  margin-left: 2%;
+  color: $white;
+}
+#logo {
+  width: 100px;
+  height: 100px;
+}
+
+#home {
+  background-color: $purple;
+  border: solid 1px $black;
+  padding-top: 20px;
+
+  width: 100px;
+
+  text-align: center;
+}
+
+#about {
+  background-color: $green;
+  border: solid 1px $black;
+  padding-top: 6%;
+  width: 100px;
+
+  font-family: "Roboto";
+  font-size: 25px;
+  text-align: center;
+}
+
+#media {
+  background-color: $yellow;
+  color: $black;
+  border: solid 1px $black;
+
+  padding-top: 6%;
+  width: 100px;
+
+  font-family: "Roboto";
+  font-size: 25px;
+  text-align: center;
+}
+
+#faq {
+  background-color: $purple;
+  color: $black;
+  border: solid 1px $black;
+
+  padding-top: 6%;
+  width: 100px;
+
+  font-family: "Roboto";
+  font-size: 25px;
+  text-align: center;
+}
+
+#contact {
+  background-color: $black;
+  color: $white;
+  border: solid 1px $black;
+
+  padding-top: 6%;
+
+  font-family: "Roboto";
+  font-size: 25px;
+}
+
+#animation {
+  display: flex;
+  flex-direction: row;
+
+  .box1 {
+    margin-top: 2%;
+    margin-left: 10%;
+    width: 650px;
+    height: 600px;
+
+    border-radius: 10%;
+    border: solid 1px $green;
+
+    background-color: $black;
+    color: $white;
+    opacity: 0.75;
+
+    animation-name: slidInRight;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    .box1-h1 {
+      text-align: center;
+    }
+    .box1-p {
+      color: $white;
+      font-size: 28px;
+    }
+  }
+
+  .box2 {
+    padding: 2em;
+    margin-top: -17%;
+    margin-left: 50%;
+    width: 650px;
+    height: 650px;
+
+    border: solid 1px $green;
+    border-radius: 15%;
+
+    background-color: $black;
+    color: $white;
+    opacity: 0.75;
+
+    animation-name: slidInLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+
+    .box2-p {
+      color: $white;
+      font-size: 25px;
+    }
+
+    .h2-box2 {
+      font-family: "Pattaya", "Henny Penny" "b";
+    }
+  }
+}
+
+@keyframes slidInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(10%);
+  }
+  100% {
+    opacity: 0.75;
+    transform: translate(0%);
+  }
+}
+
+@keyframes slidInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-10%);
+  }
+  100% {
+    opacity: 0.75;
+    transform: translate(0%);
+  }
+}
+
+.main {
+  padding-left: 2%;
+  .main-h1 {
+    border: solid 2px $purple;
+    box-shadow: $black;
+  }
+  .art-gallery {
+    margin-left: 9%;
+  }
+}
+
+.mayor {
+  margin-left: 2%;
+  color: $white;
+}
+
+.main-p {
+  color: $white;
+}
+.footer {
+  display: flex;
+  justify-self: center;
+  align-self: baseline;
+  border: solid 2px $black;
+
+  .footer-h5 {
+    text-align: center;
+    background-color: $white;
+  }
+}

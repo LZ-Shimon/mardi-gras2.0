@@ -1,0 +1,58 @@
+$purple: #9453a6;
+$green: #8cbf3f;
+$yellow: #f2cc0f;
+$white: #f2f2f2;
+$black: #0d0d0d;
+
+.main-div {
+  margin-left: 40%;
+  margin-top: -20%;
+
+  border: solid 2px $black;
+  box-shadow: $black inset 2px;
+
+  opacity: 0.82;
+}
+
+h1 {
+  font-family: "Pattaya", "Henny Penny", "b";
+  font-size: 55px;
+
+  color: $white;
+}
+
+p {
+  font-family: "Roboto";
+  font-size: 20px;
+  color: $white;
+}
+
+.mayor-div {
+  width: 550px;
+  height: 550px;
+  opacity: 0.9;
+  border: solid 2px $black;
+}
+
+.mayor-div:hover {
+  animation: disco-yea 5s linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes disco-yea {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  75% {
+    background-color: green;
+  }
+  100% {
+    background-color: red;
+  }
+}

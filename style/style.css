@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#nav-bar {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+body {
+  background-color: #8cbf3f;
+  background-image: url(/style/mask2-mardi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+h3 {
+  margin-left: 2%;
+  color: #f2f2f2;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+}
+
+#home {
+  background-color: #9453a6;
+  border: solid 1px #0d0d0d;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+#about {
+  background-color: #8cbf3f;
+  border: solid 1px #0d0d0d;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+}
+
+#media {
+  background-color: #f2cc0f;
+  border: solid 1px #0d0d0d;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+}
+
+#faq {
+  background-color: #f2f2f2;
+  border: solid 1px #0d0d0d;
+  width: 100px;
+  height: 50px;
+  color: #0d0d0d;
+  text-align: center;
+}
+
+#contact {
+  background-color: #0d0d0d;
+  border: solid 1px #0d0d0d;
+  height: 50px;
+}
+
+.box1 {
+  margin-top: 2%;
+  margin-left: 10%;
+  width: 650px;
+  height: 400px;
+  border-radius: 10%;
+  border: solid 1px #8cbf3f;
+  background-color: #9453a6;
+  color: #f2f2f2;
+  opacity: 0.9;
+  -webkit-animation-name: slidInRight;
+  animation-name: slidInRight;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+.box1 .box1-h1 {
+  text-align: center;
+}
+
+.box2 {
+  margin-top: 2%;
+  margin-left: 60%;
+  width: 650px;
+  height: 400px;
+  border: solid 1px #8cbf3f;
+  background-color: #9453a6;
+  color: #f2f2f2;
+  opacity: 0.9;
+  -webkit-animation-name: slidInLeft;
+  animation-name: slidInLeft;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+.box2 .box3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #9453a6;
+  color: #f2f2f2;
+  border: solid 1px #8cbf3f;
+  border-radius: 40%;
+  opacity: 0.9;
+  width: 500px;
+  height: 300px;
+  text-align: center;
+}
+
+@-webkit-keyframes slidInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+  }
+  50% {
+    opacity: 0.5;
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 0.9;
+    -webkit-transform: translate(0px);
+    transform: translate(0px);
+  }
+}
+
+@keyframes slidInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+  }
+  50% {
+    opacity: 0.5;
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 0.9;
+    -webkit-transform: translate(0px);
+    transform: translate(0px);
+  }
+}
+
+@-webkit-keyframes slidInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+  }
+  50% {
+    opacity: 0.5;
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 0.9;
+    -webkit-transform: translate(0px);
+    transform: translate(0px);
+  }
+}
+
+@keyframes slidInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+  }
+  50% {
+    opacity: 0.5;
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 0.9;
+    -webkit-transform: translate(0px);
+    transform: translate(0px);
+  }
+}
+
+.mayor {
+  margin-left: 2%;
+  color: #f2f2f2;
+}
+
+.main-p {
+  color: #f2f2f2;
+}
+/*# sourceMappingURL=style.css.map */
